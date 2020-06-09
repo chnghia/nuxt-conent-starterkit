@@ -1,55 +1,72 @@
-
 export default {
   mode: 'universal',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: ['@/plugins/categories'],
   /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
   ],
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    '@nuxtjs/pwa',
-  ],
+   ** Nuxt.js modules
+   */
+  modules: ['nuxt-i18n', '@nuxtjs/pwa', '@nuxt/content'],
+  i18n: {
+    locales: [
+      {
+        code: 'ru',
+        iso: 'ru-RU',
+        file: 'ru-RU.js',
+        name: 'Русский'
+      },
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.js',
+        name: 'English'
+      }
+    ],
+    defaultLocale: 'en',
+    parsePages: false,
+    lazy: true,
+    seo: false,
+    langDir: 'i18n/'
+  },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {}
   }
 }
