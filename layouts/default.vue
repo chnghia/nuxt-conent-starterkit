@@ -1,6 +1,6 @@
 <template>
   <div class="pt-16">
-    <!-- <Navbar /> -->
+    <Navbar />
     <main class="container mx-auto px-4 lg:px-8">
       <div class="flex flex-wrap relative">
         <aside
@@ -20,8 +20,7 @@
                       :to="toLink(doc.slug)"
                       class="px-2 rounded font-medium py-1 block text-gray-600 dark:text-gray-500 hover:text-gray-800 dark-hover:text-gray-100"
                       exact-active-class="text-green-600 bg-green-100 hover:text-green-600 dark:text-green-200 dark:bg-green-900 dark-hover:text-green-200"
-                      >{{ doc.title }}</NuxtLink
-                    >
+                    >{{ doc.title }}</NuxtLink>
                   </li>
                 </ul>
               </li>
@@ -38,7 +37,12 @@
 </template>
 
 <script>
+import Navbar from '@/components/Navbar'
+
 export default {
+  components: {
+    Navbar
+  },
   computed: {
     menu: {
       get() {

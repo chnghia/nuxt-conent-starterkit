@@ -1,10 +1,10 @@
 ---
-title: Index
+title: Example Page
 category: Getting started
-position: 1
+position: 2
 ---
 
-Documentation Index page
+Documentation Example page
 
 ## Heading 2
 
