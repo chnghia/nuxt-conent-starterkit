@@ -42,10 +42,10 @@ export default {
   i18n: {
     locales: [
       {
-        code: 'ru',
-        iso: 'ru-RU',
-        file: 'ru-RU.js',
-        name: 'Русский'
+        code: 'ja',
+        iso: 'ja-JP',
+        file: 'ja-JP.js',
+        name: 'Japanese'
       },
       {
         code: 'en',
