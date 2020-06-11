@@ -1,11 +1,11 @@
 ---
-title: Index
-category: Getting started
+title: 索引
+category: 入門
 position: 1
 ---
 
-Documentation Index page - Japanese
+ドキュメントインデックスページ
 
-## Heading 2
+## 見出し2
 
-## Heading 3
+## 見出し3

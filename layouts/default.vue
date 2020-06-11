@@ -70,7 +70,7 @@ export default {
 </script>
 
 <style lang="postcss">
-/* .aside-title {
+.aside-title {
   @apply mb-3 text-gray-500 uppercase tracking-wide font-bold text-sm;
 }
 .dark-mode .aside-title {
@@ -80,5 +80,5 @@ export default {
   .aside-title {
     @apply mb-2 text-xs;
   }
-} */
+}
 </style>

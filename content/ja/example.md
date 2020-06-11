@@ -1,11 +1,11 @@
 ---
-title: Example Page
-category: Getting started
+title: サンプル
+category: 入門
 position: 2
 ---
 
-Documentation Example page - Japanese
+サンプルページ
 
-## Heading 2
+## 見出し2
 
-## Heading 3
+## 見出し3

@@ -3,10 +3,9 @@
     <div class="h-full w-full container mx-auto px-4 lg:px-8 flex items-center justify-between">
       <div class="flex items-end">
         <span class="mr-2 text-sm leading-none">© {{ new Date().getFullYear() }}</span>
-        <a href="https://nuxtjs.org" target="_blank" rel="noopener">
-          <!-- <IconNuxt class="h-4" /> -->
-          Nuxt.js
-        </a>
+        <!-- <a href="https://nuxtjs.org" target="_blank" rel="noopener">
+          <IconNuxt class="h-4" />
+        </a>-->
       </div>
       <div class="flex">
         <LangSwitcher class="p-2" />

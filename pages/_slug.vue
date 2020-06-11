@@ -8,10 +8,10 @@
         <h1 class="text-4xl font-black mb-4 leading-none">{{ doc.title }}</h1>
         <nuxt-content :document="doc" />
       </article>
-      <EditOnGithub :document="doc" />
-      <ArticlePrevNext :prev="prev" :next="next" class="lg:px-8 mt-4" />
+      <!-- <EditOnGithub :document="doc" /> -->
+      <!-- <ArticlePrevNext :prev="prev" :next="next" class="lg:px-8 mt-4" /> -->
     </div>
-    <ArticleToc v-if="doc.toc && doc.toc.length" :toc="doc.toc" />
+    <!-- <ArticleToc v-if="doc.toc && doc.toc.length" :toc="doc.toc" /> -->
   </div>
 </template>
 
