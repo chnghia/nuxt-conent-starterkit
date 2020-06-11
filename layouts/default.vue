@@ -46,6 +46,9 @@ export default {
     TheFooter
   },
   computed: {
+    bodyClass() {
+      return this.$store.state.menu.open ? ['h-screen lg:h-auto overflow-y-hidden lg:overflow-y-auto'] : []
+    },
     menu: {
       get() {
         return this.$store.state.menu.open
@@ -64,6 +67,16 @@ export default {
         return this.localePath('slug')
       }
       return this.localePath({ name: 'slug', params: { slug } })
+    }
+  },
+  head() {
+    const i18nSeo = this.$nuxtI18nSeo()
+
+    return {
+      bodyAttrs: {
+        class: [...this.bodyClass, 'antialiased text-gray-800 leading-normal bg-white dark:bg-gray-900 dark:text-gray-100']
+      },
+      ...i18nSeo
     }
   }
 }
